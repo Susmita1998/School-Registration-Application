@@ -1,0 +1,73 @@
+body {margin: 0;
+    padding: 0;
+  background-image: url("Images/School_login_page_Background.jpg");
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+img{
+    width: 20%;
+    border-radius: 50px;
+    margin-left: 40%;
+}
+.container{
+    width: 30%;
+    height:400px;
+   margin-top: 5%;
+   margin-left: 10%;  
+   
+}
+p{
+    margin-top: 5%;
+    margin-left:30%;
+   margin-bottom: 10%;
+  font-size: 3rem;
+}
+.container input{
+    width: 70%;
+    height: 30px;
+    margin-bottom: 5%;
+    margin-left: 14%;
+    font-size: 1.5em;
+}
+.container input[type=text],.container input[type=password]{
+    border-style: solid;
+  border-radius: 50px;
+border-color: rgb(102, 101, 99);
+
+border-width: 1px;
+    background: transparent;
+    text-align: center;
+    outline: none;
+    padding: 5%;
+}
+.container input[type=submit]{
+    background-color: rgb(10, 86, 116);
+    border: none;
+    color: wheat;
+    font-weight: 600;
+    
+    
+}
+
+.bottom input{
+ width: 10%;
+ float: left;
+ 
+ }
+ .container a{
+    margin-left: 10%;
+    text-decoration: none;
+   
+}
+.container input[type=submit]:hover{
+
+    background-color: rgb(245, 88, 68);
+    color: black;
+
+}
+#checkbox{    
+     margin-right: 2%;
+    width: 4%;
+}

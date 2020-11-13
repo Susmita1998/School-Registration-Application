@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display page</title>
+    <link type="text/css" rel="stylesheet" href="homepage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="student.html" id="Student-registration">Click Here To Register Student</a>
+            <h2>Student Details</h2>
+        </div>
+        <div class="content">
+            <table border="5px" cellpadding="10" cellspacing="6" class="stud-table">
+                <tr class="info">
+                    <th>Roll No.</th>
+                    <th>Student Name <button id="nam">sort</button> </th>
+                    <th>Father Name</th>
+                    <th>Date of Birth</th>
+                    <th>Standard <select name="standard" class="element" id="std" onchange="getsortStandard(this.value)" required>
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                        <option value="5">V</option>
+                        <option value="6">VI</option>
+                        <option value="7">VII</option>
+                        <option value="8">VIII</option>
+                        <option value="9">IX</option>
+                        <option value="10">X</option>                                                   
+                    </select></th>
+                    <th>Section <button></button> </th>
+                    <th>Interest</th>
+                </tr>
+
+                <tbody id="myTable"></tbody>
+
+            </table>
+        </div>
+    </div>
+    <div class="chartContainer">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="homepage.js"></script>
+</body>
+
+</html>

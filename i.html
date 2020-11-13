@@ -1,0 +1,59 @@
+var studentDetail = [];
+var id = 0;
+var butn = document.querySelector('#btn');
+var nxtbtn = document.querySelector('#butn');
+var studName = document.querySelector('#sname');
+var fatherName = document.querySelector('#guardianName');
+var mobileNumber=document.querySelector('#phoneNumber');
+
+var dateOfBirth = document.querySelector('#dob');
+var standard = document.querySelector('#std');
+var section = document.querySelector('#sec');
+var interst = document.querySelector('#interest');
+var studentDetails;
+butn.addEventListener("click",  (e)=> {
+    e.preventDefault();
+    if(mobileNumber.value.length!=10)
+  {
+      alert("Mobile number must contain 10 digits");
+      return false;
+  }
+    // var idString = id.toString();
+    // var temp = "SID0";
+    // var srn = temp + idString;
+    // console.log(idString);
+    // var rollNumber;
+    if (localStorage.getItem("studentDetails") !== null) {
+        studentDetails = JSON.parse(localStorage.getItem("studentDetails"));
+        studentDetail = studentDetails;
+    console.log(studentDetail);
+    console.log(studentDetail.length);
+        rollNumber=(studentDetail.length)+1;
+    }
+    else
+       rollNumber=1;
+    var obj = {
+        sName: studName.value,
+        fName: fatherName.value,
+        dob: dateOfBirth.value,
+        std: standard.value,
+        sec: section.value,
+        roll: rollNumber,
+        interest: interst.value
+    };
+   
+    // if it has already an item, get it
+    if (localStorage.getItem("studentDetails") !== null) {
+        studentDetails = JSON.parse(localStorage.getItem("studentDetails"));
+    }
+    else {
+        studentDetails = [];
+    }
+    studentDetails.push(obj);
+    id++;
+    studentDetail = studentDetails;
+    console.log(studentDetail);
+    localStorage.setItem("studentDetails", JSON.stringify(studentDetails));
+    alert("Registration Complete");
+    // console.log(srn);
+});

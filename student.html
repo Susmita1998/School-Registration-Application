@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<link rel="stylesheet" href="student.css">
+
+<body>
+    <header>
+       <h1>Bidhannagar Kshetra Mohan Institution</h1> 
+    </header>
+    <form>
+        <h2>Student Details</h2>
+        <table>
+            <div>
+                <tr>
+                    <td>Title:</td>
+                    <td class="second_column"><select name="title_of_student" class="element"  required>
+                            <option>Mr.</option>
+                            <option>Ms.</option>                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student Name:</td>
+                    <td  class="second_column"><input type="text" class="element" name="student_name" id="sname" required></td>
+                </tr>
+                <tr>
+                    <td>Title:</td>
+                    <td class="second_column"><select name="title_of_gaurdain" class="element" required>
+                            <option>Mr.</option>
+                            <option>Mrs.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Guardian Name:</td>
+            <td class="second_column"  > <input type="text" class="element" name="gname" id="guardianName"  required></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td class="second_column"  ><input type="date" class="element" name="DOB" id="dob" max="2015-01-01" min="2002-01-01"  required></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td  class="second_column"  ><input type="text" class="element" name="address" id="address"  required></td>
+                </tr>               
+                <tr>
+                    <td> Guardian Phone Number:</td>
+                    <td class="second_column"  ><input type="text" class="element" name="phone number" id="phoneNumber"  required></td>
+                </tr>
+                <tr>
+                    <td>Standard:</td>
+                    <td class="second_column"><select name="standard" class="element" id="std"  required>
+                            <option value="1">I</option>
+                            <option value="2">II</option>
+                            <option value="3">III</option>
+                            <option value="4">IV</option>
+                            <option value="5">V</option>
+                            <option value="6">VI</option>
+                            <option value="7">VII</option>
+                            <option value="8">VIII</option>
+                            <option value="9">IX</option>
+                            <option value="10">X</option>                                                   
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Section:</td>
+                    <td  class="second_column">                       
+                        <select name="sec" id="sec" required class="element">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Interests:</td>
+                    <td class="second_column"  >
+                        <br><br><br>
+                       <textarea name="interests" id="interest" cols="30" rows="5"></textarea><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="second_column"   colspan="2" id="button"><input type="submit"  value="SUBMIT" id="btn"><br><br></td>
+                </tr>
+            </div>
+        </table>
+    </form>
+    <script src="student.js"></script>
+</body>
+
+</html>

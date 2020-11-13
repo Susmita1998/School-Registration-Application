@@ -1,0 +1,49 @@
+body {margin: 0;
+    padding: 0;
+  background-image: url("Images/scl.jpg");  
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+header h1{
+    color: lawngreen;
+    background-color: rgb(10, 115, 214);
+    padding: 1.5%;
+}
+form h2{
+    margin-left: 44%;
+    font-size: 1.9em;
+}
+table{
+ margin-left: 33%;
+}
+td{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+.second_column{
+padding-left: 10%;
+}
+.element{
+    margin-bottom: 5%;
+    padding: 2%;
+    font-size: 1em;
+}
+#button{
+  
+   text-align: center;
+}
+#btn{
+    background-color: navy;
+    color: white;
+font-weight: 700;
+padding-top: 2%;
+padding-bottom: 2%;
+border-style: none;
+}
+#btn:hover{
+    background-color: rgb(5, 153, 72);
+    color: black;
+    outline: none;
+}
+
+    

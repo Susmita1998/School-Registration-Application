@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/homepage.jpg");
+    color: rgb(253, 253, 250);
+}
+
+#Student-registration{
+   text-decoration: none;
+}
+#Student-registration:hover{
+    color: darkorange;
+}
+.container {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+
+.header {
+    margin: auto;
+    padding: 60px;
+    width: 60%;
+    height: 60%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.content {
+    margin: auto;
+    width: 90%;
+    height: 90%;
+}
+
+.stud-table {
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.stud-table tr td,
+th {
+    border: 2px solid rgb(27, 27, 29);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 5%;
+    text-align: center;
+    font-size: 1.2em;
+}
+#std option{
+    color: black;
+}
+
+.chartContainer {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+}
